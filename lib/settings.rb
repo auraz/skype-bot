@@ -1,0 +1,1 @@
+require "#{APP_ROOT}/lib/settings/application_settings"

@@ -1,0 +1,19 @@
+common: &common_settings
+    application_name: "peredast"
+    timezone: "+02:00"
+    skype_url: "http://lab.innovecs.com/api/v1/notifications"
+    airbrake_key: ""
+    log_level:  "DEBUG"
+    log_filename:   "peredast.log"
+
+development:
+    <<: *common_settings
+
+test:
+    <<: *common_settings
+
+production:
+    <<: *common_settings
+
+staging:
+    <<: *common_settings
