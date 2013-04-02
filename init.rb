@@ -8,6 +8,9 @@ rescue LoadError
   raise "Could not load the bundler gem. Install it with `gem install bundler`."
 end
 
+# Enable ActiveSupport
+require 'active_support/core_ext'
+
 # Initialize application settings
 require "#{APP_ROOT}/lib/settings"
 
